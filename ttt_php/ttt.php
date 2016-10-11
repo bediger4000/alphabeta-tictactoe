@@ -1,6 +1,5 @@
 <html>
 <head>
-<!-- $Id: ttt.php,v 1.3 2011/07/22 01:46:46 bediger Exp $ -->
 <script language=javascript" type="text/javascript">
 function setChoice(pos) {
     document.ttt.choice.value = pos;

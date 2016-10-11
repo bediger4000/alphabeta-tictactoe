@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 '''Tic tac toe in python, Minimax with alpha-beta pruning.'''
 import sys
 import random
