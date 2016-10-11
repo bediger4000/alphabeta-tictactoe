@@ -14,7 +14,7 @@ coerce the computer to going first.
 
 * C version: `./ttt -C`
 * Bash version; `./ttt.sh -C`
-* Python verions: `./ttt.py -c`
+* Python 2.x version: `./ttt.py -c`
 
 In all versions, the algorithm is alpha beta minimaxing. It could potentially
 examine the entire game tree on each move, but I don't think it does.
@@ -26,4 +26,4 @@ Ther's no obvious winner from a software engineering point of view. They all clo
 in at between 200 and 300 lines. The Bash version is convoluted by the lack of function
 return values, necessitating the use of globally-scoped variables as "return values".
 The C version is a lot faster than any of the others. The Python version has a lot
-of frills the others don't, like choice of mark characters.
+of frills the others don't, like choice of mark characters. The PHP version is point-n-click.
