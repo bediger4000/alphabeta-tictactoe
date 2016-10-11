@@ -1,0 +1,51 @@
+<html>
+<head>
+<!-- $Id: empty.html,v 1.2 2011/07/20 23:08:04 bediger Exp $ -->
+<script language=javascript" type="text/javascript">
+function setChoice(pos) {
+    document.ttt.choice.value = pos;
+    document.ttt.submit();
+}
+</script>
+</head>
+<body>
+<h1>Tic-Tac-Toe</h1>
+<form name="ttt" method="post" action="ttt.php" >
+<input type='hidden' name='choice' value="" />
+
+<table border='0'>
+	<tr>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnUL' value='&#x25A2;' onclick='setChoice("UL");' /></td>
+		<td align='center' valign='center' height='170px' width='3px'><img src='vertical170.png' /></td>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnUM' value='&#x25A2;' onclick='setChoice("UM");' /></td>
+		<td align='center' valign='center' height='170px' width='3px'><img src='vertical170.png' /></td>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnUR' value='&#x25A2'; onclick='setChoice("UR");' /></td>
+	</tr>
+	<tr>
+		<td colspan='5' align='center' valign='center' width='516px' height='3px'><img src='horizontal516.png' /></td></tr>
+	<tr>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnML' value='&#x25A2'; onclick='setChoice("ML");' /></td>
+		<td align='center' valign='center' height='170px' width='3px'><img src='vertical170.png' /></td>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnMM' value='&#x25A2'; onclick='setChoice("MM");' /></td>
+		<td align='center' valign='center' height='170px' width='3px'><img src='vertical170.png' /></td>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnMR' value='&#x25A2;' onclick='setChoice("MR");' /></td>
+	</tr>
+	<tr>
+		<td colspan='5' align='center' valign='center' width='516px' height='3px'><img src='horizontal516.png' /></td></tr>
+	<tr>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnLL' value='&#x25A2;' onclick='setChoice("LL");' /></td>
+		<td align='center' valign='center' height='170px' width='3px'><img src='vertical170.png' /></td>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnLM' value='&#x25A2;' onclick='setChoice("LM");' /></td>
+		<td align='center' valign='center' height='170px' width='3px'><img src='vertical170.png' /></td>
+		<td align='center' valign='center' height='170px' width='170px'><input type='button' name='btnLR' value='&#x25A2;' onclick='setChoice("LR");' /></td>
+	</tr>
+	<tr><td colspan='5' align='center'>&nbsp;</td></tr>
+	<tr>
+		<td align='center'><a href='ttt.php'>New - Computer First</a></td>
+		<td colspan='3'></td>
+		<td><a href='empty.html'>New - Human First</a></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
