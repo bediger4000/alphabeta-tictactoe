@@ -177,6 +177,12 @@ do
 				then
 					m=$VAL
 					COMPUTER=$SP
+				else
+					X=$(( $RANDOM % 2))
+					if (( $X == 0 ))
+					then
+						COMPUTER=$SP
+					fi
 				fi
 			fi
 		fi
@@ -201,5 +207,5 @@ print_board
 case $WINNER in
 X) echo "Computer won";;
 0) echo "Human won";;
-_) echo "Cat got the gaem";;
+_) echo "Cat got the game";;
 esac
