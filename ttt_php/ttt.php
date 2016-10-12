@@ -128,7 +128,6 @@ function fill_board() {
 		}
 	}
 	if (isset($_REQUEST['choice'])) {
-		echo "<!-- Human chose: " . htmlspecialchars($_REQUEST['choice']) . " -->\n";
 		if (in_array($_REQUEST['choice'], $spaces))
 			$board[$_REQUEST['choice']] = X_token;
 	}
@@ -247,7 +246,6 @@ function write_board_html($board, $winning_mark) {
 	if ($w == 0) {
 		$programs_choice = choose_move($board);
 		if ($programs_choice) {
-			echo "<!-- Computer chooses " . htmlspecialchars($programs_choice) . " -->\n";
 			$board[$programs_choice] = O_token;
 			$w = find_winner($board);
 		} else {
