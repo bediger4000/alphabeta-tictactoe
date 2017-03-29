@@ -1,4 +1,4 @@
-#Alpha beta minimaxing tic tac toe in various languages
+# Alpha beta minimaxing tic tac toe in various languages
 
 A set of tic tac toe games in 4 different programming languges, C, Python, bash and PHP.
 
@@ -22,7 +22,7 @@ examine the entire game tree on each move, but I don't think it does.
 I was untruthful: the C language version is non-recursive, and just plays according
 to a very simple set of rules-of-thumb that almost certainly keep it from losing.
 
-Ther's no obvious winner from a software engineering point of view. They all clock
+There's no obvious winner from a software engineering point of view. They all clock
 in at between 200 and 300 lines. The Bash version is convoluted by the lack of function
 return values, necessitating the use of globally-scoped variables as "return values".
 The C version is a lot faster than any of the others. The Python version has a lot
