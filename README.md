@@ -1,5 +1,7 @@
 # Alpha beta minimaxing tic tac toe in various languages
 
+[Another set of tic tac toe players](https://github.com/andrewgph/TicTacToe-Players)
+
 A set of tic tac toe games in 4 different programming languges, C, Python, bash and PHP.
 
 In every one of these games (except the PHP version, which is point-n-click),
